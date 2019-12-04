@@ -19,15 +19,26 @@ ul{
 body{
     -webkit-text-size-adjust:none
 }
+
 .FooterRow{
     display:table;
     width:100%;
     table-layout:fixed;
-    border-spacing:10px
+    border-spacing:20px
 }
 .FooterColumn{
     display:table-cell
 }
+
+@media screen and (max-width: 479px) {
+    .FooterRow {
+        display: block;
+    }
+    .FooterColumn {
+        display:inline-block;
+    }
+}
+
 *,:after,:before{
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -72,6 +83,7 @@ body{
     .container{
         width:1200px
     }
+
 }
 @media screen and (min-width:737px) and (max-width:1200px){
     .container.\31 25\25{
